@@ -6,9 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src='./script.js'></script>
     <link rel='stylesheet' href='./style.css'>
-    <title>Document</title>
+    <title>Odin Sign-Up</title>
 </head>
 <body>
-    
+    <div class='content-container'>
+        <img src='./images/gradienta-m_7p45JfXQo-unsplash.jpg'>
+        <label class='img-text'>
+            Photo by 
+            <a href='https://unsplash.com/@gradienta'>@Gradienta</a> on <a href='https://unsplash.com/'>Unsplash</a></label>
+        <div class='right-container'> 
+            <p>This is not a real online service! You know you need something like this in your life to help you realise your deepest dreams. Sign up <em>now</em> to get started</p>
+            <p>You know you want to.</p>  
+            <form action='' method='post'>
+                <div class='form-grid-container'> 
+                    <div class='input-container'>
+                        <label for='first_name'>First name</label>
+                        <input type='text' name='first_name'>
+                    </div>
+                    <div class='input-container'>
+                        <label for='last_name'>Last name</label>
+                        <input type='text' name='last_name'>
+                    </div>
+                    <div class='input-container'>
+                        <label for='email'>E-Mail</label>
+                        <input type='email' name='email'>
+                    </div>
+                    <div class='input-container'>
+                        <label for='phone'>Phone number</label>
+                        <input type='tel' name='phone'>
+                    </div>
+                    <div class='input-container'>
+                        <label for='pass'>Password</label>
+                        <input type='password' name='pass' class='error correct'>
+                    </div>
+                    <div class='input-container'>
+                        <label for='passConfirm'>Confirm password</label>
+                        <input type='password' name='passConfirm' class='error'>
+                    </div>
+                </div>
+                <input type='submit' value='Create Account' class='submit-button'>
+                <p class='existing-user'>Already have an account? <a href=''>Log in</a></p>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
