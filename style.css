@@ -23,6 +23,7 @@ html{
 img {
     height: 70vh;
     width: auto;
+    width: clamp(100px, auto, auto);
 }
 .img-text {
     position: absolute;
@@ -40,6 +41,7 @@ img {
 .right-container {
     background-color: rgb(250,249,246, 0.8);
     padding-inline: 30px;
+    width: clamp(150px, auto, auto);
 }
 .right-container p:not(.existing-user) {
     font-weight: 700;
@@ -64,6 +66,7 @@ form {
     letter-spacing: 0.17em;
     font-size: 14px;
     max-width: 200px;
+    min-width: 120px;
 }
 .input-container:nth-child(n+3){
     padding-top: 16px;
@@ -75,13 +78,18 @@ input {
 .error {
     border-color: rgb(255,0,0, 0.4);
 }
-.correct {
-    border-color: rgb(50,200,50,0.6);
-}
 input:focus {
     outline: none;
     border-color: rgb(0,0,255,1);
     transition: 0.7s;
+}
+.pass-unmatch {
+    color: rgb(255,0,0,0.6);
+    font-size: 12px;
+    letter-spacing: 0.05em;
+}
+.pass-match {
+    opacity: 0;
 }
 .submit-button {
     margin-top: 30px;
